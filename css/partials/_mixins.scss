@@ -310,7 +310,7 @@ padding : 0; }
 
 // @include heading(MARGIN, FONT SIZE, LINE HEIGHT)
 
-@mixin heading($margin : 1, $font-size : 1, $line-height : 1)  {
+@mixin heading($margin : 1, $font-size : 1, $line-height : "")  {
 margin-bottom : $baselineheight / $margin;
 @include font-size($basefontsize * $font-size);
-line-height : $line-height;}
+@if $line-height != "" { line-height: $line-height }}
