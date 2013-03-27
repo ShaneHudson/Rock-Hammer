@@ -3,8 +3,6 @@
 // No need to thouch this block of code, only the initialisation line below
 var LeftNavFlyout = {
 	init: function(menu, menuLink, wrap, toggleClass) {
-		$('body').addClass('js');
-
 		var $menu = $(menu),
 		$menulink = $(menuLink),
 		$wrap = $(wrap);
