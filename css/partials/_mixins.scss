@@ -307,3 +307,10 @@ white-space : nowrap; }
 @mixin zero {
 margin : 0;
 padding : 0; }
+
+// @include heading(MARGIN, FONT SIZE, LINE HEIGHT)
+
+@mixin heading($margin : 1, $font-size : 1, $line-height : 1)  {
+margin-bottom : $baselineheight / $margin;
+@include font-size($basefontsize * $font-size);
+line-height : $line-height;}
